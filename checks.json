@@ -1,60 +1,60 @@
 [{
-    head: 'materials/imgs/D9.png',
+    head: 'materials/imgs/D8.png',
     choice_1: 'materials/imgs/D18.png',
-    choice_2: 'materials/imgs/D9.png',
+    choice_2: 'materials/imgs/D8.png',
     correct_choice: '1'
   },
 {
     head: 'materials/imgs/D18.png',
-    choice_1: 'materials/imgs/D9.png',
+    choice_1: 'materials/imgs/D8.png',
     choice_2: 'materials/imgs/D18.png',
     correct_choice: '1'
   },
 {
     head: 'materials/imgs/D26.png',
     choice_1: 'materials/imgs/D26.png',
-    choice_2: 'materials/imgs/D40.png',
+    choice_2: 'materials/imgs/D46.png',
     correct_choice: '0'
   },
 {
-    head: 'materials/imgs/D40.png',
-    choice_1: 'materials/imgs/D40.png',
-    choice_2: 'vD26.png',
+    head: 'materials/imgs/D46.png',
+    choice_1: 'materials/imgs/D46.png',
+    choice_2: 'materials/imgs/D26.png',
     correct_choice: '0'
   },
 {
-    head: 'materials/imgs/D43.png',
-    choice_1: 'materials/imgs/D62.png',
-    choice_2: 'materials/imgs/D43.png',
+    head: 'materials/imgs/D53.png',
+    choice_1: 'materials/imgs/D64.png',
+    choice_2: 'materials/imgs/D53.png',
     correct_choice: '1'
   },
 {
-    head: 'materials/imgs/D62.png',
-    choice_1: 'materials/imgs/D62.png',
-    choice_2: 'materials/imgs/D43.png',
+    head: 'materials/imgs/D64.png',
+    choice_1: 'materials/imgs/D64.png',
+    choice_2: 'materials/imgs/D53.png',
     correct_choice: '0'
   },
 {
-    head: 'materials/imgs/D72.png',
-    choice_1: 'materials/imgs/D72.png',
-    choice_2: 'materials/imgs/D75.png',
+    head: 'materials/imgs/D76.png',
+    choice_1: 'materials/imgs/D76.png',
+    choice_2: 'materials/imgs/D78.png',
     correct_choice: '0'
   },
 {
-    head: 'materials/imgs/D75.png',
-    choice_1: 'materials/imgs/D72.png',
-    choice_2: 'materials/imgs/D75.png',
+    head: 'materials/imgs/D78.png',
+    choice_1: 'materials/imgs/D76.png',
+    choice_2: 'materials/imgs/D78.png',
     correct_choice: '1'
   },
 {
     head: 'materials/imgs/D101.png',
-    choice_1: 'materials/imgs/D107.png',
+    choice_1: 'materials/imgs/D106.png',
     choice_2: 'materials/imgs/D101.png',
     correct_choice: '1'
   },
 {
-    head: 'materials/imgs/D107.png',
-    choice_1: 'materials/imgs/D107.png',
+    head: 'materials/imgs/D106.png',
+    choice_1: 'materials/imgs/D106.png',
     choice_2: 'materials/imgs/D101.png',
     correct_choice: '0'
   }]
