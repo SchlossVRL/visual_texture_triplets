@@ -28,12 +28,9 @@
     var jsPsych = initJsPsych({
         show_progress_bar: false,
         on_data_update: function () {
-            jsPsych.data.addProperties({ worker_id: urlvar.workerId });
             timeline.push(save_data);
         },
         on_finish: function () {
-            jsPsych.data.addProperties({ worker_id: urlvar.workerId });
-            jsPsych.data.get().localSave("csv", filename);
             timeline.push(save_data);
         },
         max_load_time: 120000,
@@ -42,15 +39,16 @@
     // Create timeline variable //
     var timeline = []; //timeline for experiment (once ID is registered)
 
-    //create random ids
-    const subject_id = jsPsych.randomization.randomID(10);
-    const filename = `${subject_id}.csv`;
-
     //SONA
 
     // Capture the participant ID
     let sona_id = jsPsych.data.urlVariables()['sona_id']
 
+    const SONA_ID = jsPsych.data.urlVariables()['sona_id']
+
+    //create random ids
+    const subject_id = jsPsych.randomization.randomID(10);
+    const filename = `${subject_id}.csv`;
 
     // Set background color to gray //
     document.body.style.backgroundColor = "rgb(128,128,128)"
@@ -145,6 +143,10 @@
         error_message:
             "Oops! There's a problem loading files. Please refresh the page to try again.",
     };
+    jsPsych.data.addProperties({
+        subject_id: subject_id,
+        sona_id: SONA_ID
+    });
     timeline.push(preload);
 
     var stimuli_texture = [
@@ -1290,7 +1292,12 @@
         fullscreen_mode: false
     })
 
-    jsPsych.run(timeline);
+    jsPsych.run(timeline, {
+        on_finish: function () {
+            // Redirect to Sona's completion URL with the sona_id for credit
+            window.location.assign("https://uwmadison.sona-systems.com/webstudy_credit.aspx?experiment_id=1652&credit_token=ea076512702d447d87e368a354e37fd9&survey_code=" + sona_id);
+        }
+    });
 
 </script>
 
