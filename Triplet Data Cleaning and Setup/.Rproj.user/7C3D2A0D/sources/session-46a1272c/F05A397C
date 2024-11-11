@@ -1,0 +1,28 @@
+{
+    "id": "F05A397C",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1725658086438.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "id": "8a959c735fe8476689fbd267c945c34c",
+        "name": "combinations",
+        "title": "combinations",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 0,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1725658086438,
+    "read_only": false,
+    "read_only_alternatives": []
+}
